@@ -7,8 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "SocketServer.h"
 
 @interface AppDelegate ()
+- (IBAction)Btn_Server:(NSButton *)sender;
+- (IBAction)Btn_Client:(NSButton *)sender;
 
 @property (weak) IBOutlet NSWindow *window;
 @end
@@ -25,4 +28,19 @@
 }
 
 
+- (IBAction)Btn_Server:(NSButton *)sender {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT , 0), ^{
+                       [SocketServer sendServerData];
+    });
+    
+    
+}
+
+- (IBAction)Btn_Client:(NSButton *)sender {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [SocketServer sendClientData];
+    });
+    
+    
+}
 @end

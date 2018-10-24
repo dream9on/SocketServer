@@ -13,6 +13,7 @@
 		DEFFB8F6217626CD00F71E0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFFB8F5217626CD00F71E0C /* main.m */; };
 		DEFFB901217626CD00F71E0C /* SocketServerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFFB900217626CD00F71E0C /* SocketServerTests.m */; };
 		DEFFB90C217626CD00F71E0C /* SocketServerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFFB90B217626CD00F71E0C /* SocketServerUITests.m */; };
+		DEFFB91B2176271000F71E0C /* SocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFFB91A2176271000F71E0C /* SocketServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		DEFFB907217626CD00F71E0C /* SocketServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEFFB90B217626CD00F71E0C /* SocketServerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketServerUITests.m; sourceTree = "<group>"; };
 		DEFFB90D217626CD00F71E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFFB9192176271000F71E0C /* SocketServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketServer.h; sourceTree = "<group>"; };
+		DEFFB91A2176271000F71E0C /* SocketServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketServer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 			children = (
 				DEFFB8EC217626CC00F71E0C /* AppDelegate.h */,
 				DEFFB8ED217626CC00F71E0C /* AppDelegate.m */,
+				DEFFB9192176271000F71E0C /* SocketServer.h */,
+				DEFFB91A2176271000F71E0C /* SocketServer.m */,
 				DEFFB8EF217626CD00F71E0C /* Assets.xcassets */,
 				DEFFB8F1217626CD00F71E0C /* MainMenu.xib */,
 				DEFFB8F4217626CD00F71E0C /* Info.plist */,
@@ -257,6 +262,7 @@
 			files = (
 				DEFFB8F6217626CD00F71E0C /* main.m in Sources */,
 				DEFFB8EE217626CC00F71E0C /* AppDelegate.m in Sources */,
+				DEFFB91B2176271000F71E0C /* SocketServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
